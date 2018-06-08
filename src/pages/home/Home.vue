@@ -1,10 +1,19 @@
 <template>
-    <div>home</div>
+  <div>
+    <home-header></home-header>
+    <home-swiper></home-swiper>
+    <div>test</div>
+  </div>
 </template>
 
-<script type="text/ecmascript-6">
+<script>
+import HomeHeader from './components/Head'
+import HomeSwiper from './components/Swiper'
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    HomeHeader, HomeSwiper
+  }
 }
 </script>
 
